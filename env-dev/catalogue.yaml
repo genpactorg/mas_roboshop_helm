@@ -1,0 +1,18 @@
+component_name: catalogue
+
+configmap_data:
+  MONGO: "true"
+  MONGO_URL: "mongodb://mongodb-dev.masdevops.online:27017/catalogue"
+  DB_TYPE: mongo
+  APP_GIT_URL: https://github.com/roboshop-devops-project-v3/catalogue
+  DB_HOST: mongodb-dev.masdevops.online
+
+schema:
+  enabled: true
+  jobs:
+    - master-data
+  extention: js
+
+
+
+

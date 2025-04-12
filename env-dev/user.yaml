@@ -1,0 +1,10 @@
+component_name: user
+
+configmap_data:
+  MONGO: "true"
+  MONGO_URL: "mongodb://mongodb-dev.masdevops.online:27017/users"
+  REDIS_URL: "redis://redis-dev.masdevops.online:6379"
+
+
+
+
