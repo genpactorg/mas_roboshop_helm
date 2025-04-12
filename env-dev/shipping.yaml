@@ -11,8 +11,8 @@ configmap_data:
 schema:
   enabled: true
   jobs:
-    - master-data
     - schema
     - app-user
+    - master-data
   extention: sql
 
