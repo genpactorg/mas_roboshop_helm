@@ -1,6 +1,7 @@
 default:
 	git pull
-	helm upgrade -i $(component) . -f env-$(env)/$(component).yaml --set imageTag=$(imageTag)
+	helm upgrade -i $(component) . -f env-$(env)/$(component).yaml
+	# --set imageTag=$(imageTag)
 
 debug:
 	git pull
