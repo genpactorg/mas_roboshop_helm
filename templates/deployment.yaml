@@ -15,11 +15,10 @@ spec:
         component: {{ .Values.component_name }}
     spec:
       containers:
-      - name: {{ .Values.component_name }}
-        # image: public.ecr.aws/w8x4g9h7/roboshop-v3/{{ .Values.component_name }}
-        image: 253490775871.dkr.ecr.us-east-1.amazonaws.com/{{ .Values.component_name }}:{{ .Values.imageTag }}
-        envFrom:
-          - configMapRef:
-              name: {{ .Values.component_name }}
+        - name: {{ .Values.component_name }}
+          image: 253490775871.dkr.ecr.us-east-1.amazonaws.com/{{ .Values.component_name }}:{{ .Values.imageTag }}
+          envFrom:
+            - configMapRef:
+                name: {{ .Values.component_name }}
 
 
